@@ -50,6 +50,7 @@ RUN set -ex \
 	done
 
 COPY config ./config
+COPY change.sh ./
 
 VOLUME /usr/share/elasticsearch/data
 

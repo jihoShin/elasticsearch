@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Run change script
+sh /usr/share/elasticsearch/change.sh
+
 set -e
 
 # Add elasticsearch as command if needed
