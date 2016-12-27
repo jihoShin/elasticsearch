@@ -38,6 +38,8 @@ ENV PATH /usr/share/elasticsearch/bin:$PATH
 
 WORKDIR /usr/share/elasticsearch
 
+RUN bin/elasticsearch-plugin install --batch discovery-ec2
+
 RUN set -ex \
 	&& for path in \
 		./data \
@@ -53,6 +55,7 @@ COPY config ./config
 COPY change.sh ./
 
 VOLUME /usr/share/elasticsearch/data
+VOLUME /usr/share/elasticsearch/logs
 
 COPY docker-entrypoint.sh /
 
