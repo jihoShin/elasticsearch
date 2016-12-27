@@ -57,6 +57,7 @@ COPY change.sh ./
 VOLUME /usr/share/elasticsearch/data
 VOLUME /usr/share/elasticsearch/logs
 
+COPY java.policy /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/
 COPY docker-entrypoint.sh /
 
 EXPOSE 9200 9300
