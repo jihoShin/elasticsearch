@@ -28,3 +28,5 @@ change_properties $ES_CONF 'discovery.ec2.availability_zones' $DISC_EC2_AZ
 change_properties $ES_CONF 'node.master' $NODE_MASTER
 change_properties $ES_CONF 'node.data' $NODE_DATA
 change_properties $ES_CONF 'node.max_local_storage_nodes' $MAX_LOCAL_STORAGE_NODES
+
+change_properties $ES_CONF 'xpack.monitoring.enabled' $XPACK_MONITORING_ENABLED
