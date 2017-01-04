@@ -21,10 +21,6 @@ change_properties $ES_CONF 'cloud.aws.region' $CLOUD_AWS_REGION
 change_properties $ES_CONF 'cloud.aws.access_key' $CLOUD_AWS_ACCESS_KEY
 change_properties $ES_CONF 'cloud.aws.secret_key' $CLOUD_AWS_SECRET_KEY
 
-change_properties $ES_CONF 'cloud.aws.region' $CLOUD_AWS_REGION
-change_properties $ES_CONF 'cloud.aws.access_key' $CLOUD_AWS_ACCESS_KEY
-change_properties $ES_CONF 'cloud.aws.secret_key' $CLOUD_AWS_SECRET_KEY
-
 change_properties $ES_CONF 'discovery.zen.minimum_master_nodes' $DISC_MIN_MASTER_NODE
 change_properties $ES_CONF 'discovery.ec2.groups' $DISC_EC2_GROUPS
 change_properties $ES_CONF 'discovery.ec2.availability_zones' $DISC_EC2_AZ
