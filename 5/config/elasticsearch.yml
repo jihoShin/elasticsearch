@@ -22,3 +22,4 @@ node.data: true
 node.max_local_storage_nodes: 1
 
 xpack.security.enabled: false
+xpack.monitoring.enabled: false
