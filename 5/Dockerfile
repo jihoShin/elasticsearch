@@ -39,6 +39,7 @@ ENV PATH /usr/share/elasticsearch/bin:$PATH
 WORKDIR /usr/share/elasticsearch
 
 RUN bin/elasticsearch-plugin install --batch discovery-ec2
+RUN bin/elasticsearch-plugin install --batch x-pack
 
 RUN set -ex \
 	&& for path in \

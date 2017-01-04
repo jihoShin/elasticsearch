@@ -1,7 +1,24 @@
-network.host: 0.0.0.0
+network.host: _ec2_
+
+
+cluster.name: elasticsearch 
+
+cloud.aws.region: ap-northeast-1
+cloud.aws.access_key: accesskey
+cloud.aws.secret_key: secretkey
+cloud.node.auto_attributes: true
+
+plugin.mandatory: discovery-ec2
+discovery:
+        zen.hosts_provider: ec2
+        type: ec2
 
 discovery.zen.minimum_master_nodes: 1
-discovery.zen.ping.unicast.hosts: 127.0.0.1:9300
+discovery.ec2.groups: m1-dev-subnet
+discovery.ec2.availability_zones: ap-northeast-1a
+
 node.master: true
 node.data: true
-node.max_local_storage_nodes: 5
+node.max_local_storage_nodes: 1
+
+xpack.security.enabled: false
