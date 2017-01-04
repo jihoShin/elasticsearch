@@ -1,11 +1,10 @@
 network.host: _ec2_
 
-
 cluster.name: elasticsearch 
 
 cloud.aws.region: ap-northeast-1
-cloud.aws.access_key: accesskey
-cloud.aws.secret_key: secretkey
+cloud.aws.access_key: accessKey
+cloud.aws.secret_key: secretKey
 cloud.node.auto_attributes: true
 
 plugin.mandatory: discovery-ec2
