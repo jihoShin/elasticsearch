@@ -31,6 +31,7 @@ change_properties_2(){
 }
 
 
+change_properties $ES_CONF 'network.host' $NETWORK_HOST
 change_properties $ES_CONF 'cluster.name' $CLUSTER_NAME
 change_properties $ES_CONF 'cloud.aws.region' $CLOUD_AWS_REGION
 change_properties $ES_CONF 'discovery.zen.minimum_master_nodes' $DISC_MIN_MASTER_NODE
